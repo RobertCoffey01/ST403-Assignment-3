@@ -21,9 +21,6 @@ fit <- optim(inits, nll_lm, data = df, method = "L-BFGS-B",
 
 beta_estimates <- fit$par[1:(ncol(df))] 
 sigma_estimate <- fit$par[length(fit$par)] 
-results <- data.frame(
-  Parameter = c("Intercept", "Beta_x1", "Beta_x2", "Beta_x3", "Sigma"),
-  Estimate = round(c(beta_estimates, sigma_estimate), 4)
-)
+beta_estimates
+sigma_estimate
 
-print(results) 
