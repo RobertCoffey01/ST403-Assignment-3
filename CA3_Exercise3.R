@@ -23,4 +23,3 @@ beta_estimates <- fit$par[1:(ncol(df))]
 sigma_estimate <- fit$par[length(fit$par)] 
 beta_estimates
 sigma_estimate
-
